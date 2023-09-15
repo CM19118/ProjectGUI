@@ -84,18 +84,17 @@ public class Main extends Application {
                 TblProductController productoController = (TblProductController) controller;
                 productoController.mostrarListaProducto();
             }
-            /*
             else if (controller instanceof InventarioController) {
                 InventarioController inventarioController = (InventarioController) controller;
-                inventarioController.mostrarListaInventario();
+                //inventarioController.mostrarListaInventario();
             } else if (controller instanceof CarritoController) {
                 CarritoController carritoController = (CarritoController) controller;
-                carritoController.mostrarListaCarrito();
+                //carritoController.mostrarListaCarrito();
             } else if (controller instanceof FacturaController) {
-                //FacturaController facturaController = (FacturaController) controller;
-                facturaController.mostrarListaFactura();
+                FacturaController facturaController = (FacturaController) controller;
+                //facturaController.mostrarListaFactura();
             }
-             */
+
 
         } catch (IOException e) {
             e.printStackTrace();

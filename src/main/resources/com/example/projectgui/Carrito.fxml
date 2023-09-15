@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="850.666666666667" prefWidth="1112.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectgui.Controller.CarritoController">
+   <children>
+      <Text layoutX="285.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMING SOON..." wrappingWidth="488.8033447265625">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Text>
+      <Text layoutX="274.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PANEL CARRITO" wrappingWidth="488.8033447265625">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
