@@ -5,11 +5,14 @@
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.InnerShadow?>
 <?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.scene.control.PasswordField?>
 <AnchorPane prefHeight="640.0" prefWidth="1110.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectgui.Controller.InicioSesion">
    <children>
       <Polygon fill="#1f93fff2" layoutX="198.0" layoutY="203.0" points="480.0, -203.0, -198.0, -203.0, -198.0, 437.0, 182.66668701171875, 437.0" stroke="#00000016" strokeType="INSIDE">
@@ -21,6 +24,11 @@
             <Font size="20.0" />
          </font>
       </Button>
+      <ImageView fitHeight="560.0" fitWidth="595.0" layoutX="-5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/LogoReparacionesKeilly.png" />
+         </image>
+      </ImageView>
       <TextField fx:id="txtUser" layoutX="749.0" layoutY="239.0" prefHeight="64.0" prefWidth="265.0" promptText="Email" style="-fx-background-radius: 10;">
          <font>
             <Font name="Californian FB" size="18.0" />
@@ -29,14 +37,14 @@
             <Blend />
          </effect>
       </TextField>
-      <TextField fx:id="txtPass" layoutX="749.0" layoutY="337.0" prefHeight="64.0" prefWidth="265.0" promptText="Contraseña" style="-fx-background-radius: 10;">
+      <PasswordField fx:id="txtPass" layoutX="749.0" layoutY="337.0" prefHeight="64.0" prefWidth="265.0" promptText="Contraseña" style="-fx-background-radius: 10;">
          <font>
             <Font name="Bodoni MT" size="18.0" />
          </font>
          <effect>
             <Blend />
          </effect>
-      </TextField>
+      </PasswordField>
       <Text layoutX="749.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INICIO DE SESION" wrappingWidth="309.98301124572754">
          <font>
             <Font name="Californian FB" size="35.0" />

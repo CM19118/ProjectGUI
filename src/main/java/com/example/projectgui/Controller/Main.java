@@ -2,6 +2,7 @@ package com.example.projectgui.Controller;
 
 import com.example.projectgui.DatabaseConnection;
 import com.example.projectgui.Models.Producto;
+import com.example.projectgui.Models.Proveedor;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -37,6 +38,12 @@ public class Main extends Application {
     private Button btnProductos;
 
     @FXML
+    private Button btnVentas;
+
+    @FXML
+    private Button btnProveedores;
+
+    @FXML
     private StackPane centerPane;
 
 
@@ -64,6 +71,10 @@ public class Main extends Application {
             loadView("Carrito.fxml");
         } else if (event.getSource() == btnFacturas) {
             loadView("Factura.fxml");
+        } else if(event.getSource() == btnVentas){
+            loadView("Ventas.fxml");
+        } else if(event.getSource() == btnProveedores){
+            loadView("Proveedor.fxml");
         }
     }
 
@@ -93,6 +104,10 @@ public class Main extends Application {
             } else if (controller instanceof FacturaController) {
                 FacturaController facturaController = (FacturaController) controller;
                 //facturaController.mostrarListaFactura();
+            } else if(controller instanceof  VentasController){
+                VentasController ventasController = (VentasController) controller;
+            } else if(controller instanceof  ProveedorController){
+                ProveedorController proveedorController = (ProveedorController) controller;
             }
 
 
